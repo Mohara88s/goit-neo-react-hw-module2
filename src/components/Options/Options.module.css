@@ -1,0 +1,16 @@
+.options {
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+}
+
+.options button {
+	background-color: rgb(178, 253, 253);
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.options button:hover {
+	background-color: aqua;
+}
