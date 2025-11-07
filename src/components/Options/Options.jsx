@@ -1,12 +1,18 @@
 import style from "./Options.module.css";
 
-export default function Options({ options }) {
+export default function Options({ options, updateFeedback }) {
 	return (
 		<ul className={style.options}>
 			{Object.keys(options).map((option, i) => {
 				return (
 					<li key={i}>
-						<button>{option}</button>
+						<button
+							onClick={() => {
+								updateFeedback(option);
+							}}
+						>
+							{option}
+						</button>
 					</li>
 				);
 			})}
