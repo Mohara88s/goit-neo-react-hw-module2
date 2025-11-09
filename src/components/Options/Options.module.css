@@ -2,15 +2,23 @@
 	display: flex;
 	gap: 5px;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .options button {
+	min-width: 100px;
 	background-color: rgb(178, 253, 253);
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 5px 10px;
+	padding: 7px 5px;
+	text-transform: capitalize;
 }
 
 .options button:hover {
 	background-color: aqua;
+}
+.reset_btn_item {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
 }
